@@ -25,10 +25,13 @@ https://ics.media/entry/241108/
 viteでNuxt プロジェクトを作ります
 プロジェクト名は、 ai-swift-official-blog
 Nuxtをイニシャライズしましょう
+assets/1_nuxt_init.png
+
 
 
 次にNuxt Content v3 を作成します
 npm install @nuxt/content　で インストール
+
 
 nuxt.config.tsにモジュールを登録します
 export default defineNuxtConfig({
@@ -44,7 +47,7 @@ import { defineContentConfig, defineCollection } from '@nuxt/content';
 
 export default defineContentConfig({
   collections: {
-    content: defineCollection({
+    contents: defineCollection({
       type: 'page',
       source: '**/*.md'
     })
@@ -52,7 +55,7 @@ export default defineContentConfig({
 });
 
 
-こうして、 root直下の `/content` 配下のマークダウンファイルを管理します。
+こうして、 root直下の `/contents` 配下のマークダウンファイルを管理します。
 
 次にmdファイルのメタデータとなるフロントマターを書きます。
 その前にフロントマターに独自の設定を書きます。
@@ -69,7 +72,7 @@ export default defineContentConfig({
   collections: {
     content: defineCollection({
       type: 'page',
-      source: '**/*.md'
+      source: '**/*.md',
       // ⭐️メタデータの追加
       schema: z.object({
         draft: z.boolean(),
@@ -100,7 +103,7 @@ tag:
 
 
 フロントマターをクエリキーワードにして
-/content　の中身を取り出せます
+/contents　の中身を取り出せます
 
 https://ics.media/entry/241108/
 
