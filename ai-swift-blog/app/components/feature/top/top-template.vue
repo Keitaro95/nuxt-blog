@@ -1,8 +1,12 @@
 <script setup lang="ts">
-import TheModuleBar from '../../layout/TheModuleBar.vue';
-
+import BlogSection from '~/components/parts/BlogSection.vue';
+import TheSeparator from '~/components/parts/TheSeparator.vue';
+import TheController from '~/components/parts/TheController.vue';
 </script>
 
 <template>
-    <TheModuleBar />
+    <TheSeparator />
+    <BlogSection />
+
+    <TheController />
 </template>
