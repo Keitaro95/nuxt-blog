@@ -7,6 +7,5 @@ import TheController from '~/components/parts/TheController.vue';
 <template>
     <TheSeparator />
     <BlogSection />
-
     <TheController />
 </template>

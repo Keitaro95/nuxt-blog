@@ -8,10 +8,14 @@ import {
 </script>
 
 <template>
-    <div class="flex flex-col items-center">
-        <div class="flex justify-center">
+        <div class="flex flex-col items-center">
             <ArrowBigUpDash />
+        </div>
+        <div class="flex justify-center gap-4">
+            <ArrowBigLeftDash />
+            <ArrowBigRightDash />
+        </div>
+        <div class="flex flex-col items-center">
             <ArrowBigDownDash />
         </div>
-    </div>
 </template>
